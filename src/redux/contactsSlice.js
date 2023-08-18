@@ -13,7 +13,7 @@ const initialState=[{id:123, name:'Mango', number:'123456'}];
         prepare(text) {
             return {
               payload: {
-                text,
+                ...text,
                 id: nanoid(),
                 
               }}},
