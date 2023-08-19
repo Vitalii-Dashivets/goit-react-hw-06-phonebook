@@ -6,7 +6,7 @@ import { useMemo } from 'react';
 export function ContactList() {
   const filterValue = useSelector(getFilter);
   const contacts = useSelector(getContacts);
-  console.log(contacts);
+
   const visibleContacts = useMemo(() => {
     const normalizedFilter = filterValue.toLowerCase();
     return contacts.filter(contact => {
